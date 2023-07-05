@@ -1,5 +1,13 @@
+import { useLocation } from 'react-router-dom';
+
 const Footer = () => {
-    return <h1>Footer</h1>;
-  };
+
+  const location = useLocation();
+
+  return ( 
+    <div class="text-center text-lg">
+      {(location.pathname==="/login") ? <a href='/register'>Register</a> : <a href='/login'>Login</a>}
+    </div>
+  )};
   
   export default Footer;
