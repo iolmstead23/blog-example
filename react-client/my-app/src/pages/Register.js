@@ -4,6 +4,7 @@ import {useState} from 'react';
 const Register = () => {
 
     const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
 
     async function register(ev) {
         ev.preventDefault();

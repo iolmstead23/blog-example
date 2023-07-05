@@ -14,11 +14,15 @@ export default function Navbar({ fixed }) {
             DW Software
             </a>
             <button
-              className="text-white  cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline:none focus:outline-none"
+              className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline:none focus:outline-none"
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
-              <i className="fas fa-bars"></i>
+              <div class="p-4 space-y-2 bg-gray-600 rounded shadow">
+                <span class="block w-8 h-0.5 bg-gray-100 animate-pulse"></span>
+                <span class="block w-8 h-0.5 bg-gray-100 animate-pulse"></span>
+                <span class="block w-8 h-0.5 bg-gray-100 animate-pulse"></span>
+              </div>
             </button>
           </div>
           <div
